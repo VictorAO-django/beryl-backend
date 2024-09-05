@@ -10,11 +10,293 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "7b2ba341-502a-49bd-a77d-e2141d3deaad",
+        "_postman_id": "c8f615b5-55ca-4836-a8ef-ea6f0c275356",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
-    "item": [],
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET up",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "up",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/up"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel<\/title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https:\/\/fonts.bunny.net\">\n        <link href=\"https:\/\/fonts.bunny.net\/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" \/>\n\n        <!-- Styles -->\n        <script src=\"https:\/\/cdn.tailwindcss.com\"><\/script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        <\/script>\n    <\/head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3\/4 xl:w-1\/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700\/50 via-transparent rounded-lg shadow-2xl shadow-gray-500\/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"><\/span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"><\/span>\n                    <\/div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up<\/h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 8123ms.\n                                                    <\/p>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/body>\n<\/html>\n",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET \/",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "\/",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/\/"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IlpGUzFBbktvYmVSR3ZDUVM5VS9WcXc9PSIsInZhbHVlIjoiM2t3UjNTbjU3bEowNEJoY2x5dlBDb1ZxUlk2bUV4OEltZ1lqT3UzcGRlbkY5SGEwYy9FbFBuRjJtTDNuUmFlTm84RXdpOVp6bXh5V0RXd1hOcG5wOGE5SU9VV0IvL3NFbnF2c3NMZjhNRzJQeWQzY3lJRGRkYUpWMmxmSG1DOTUiLCJtYWMiOiIzMTRhMTZiZTQ2NDQ5OGZhNzQxYjA3YzM3NWViMjY3MGUxOTAyZDlhYzY0OGVlNTQ2YzU5ZmJlNDEwNjVjYzZlIiwidGFnIjoiIn0%3D; expires=Wed, 04 Sep 2024 13:12:02 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6IkNJemtNY2hCNjVTNDUvSS9QYzhmeWc9PSIsInZhbHVlIjoiZFJ3T0dWWXA4ZXUyOUplak9WbXQwdENRdWxWdmV5cU1iQWVLK2hjaXNsQVVFbkdrM3BwTWlYaGI0NzA0cmU5dkYvNFYza0dkU1pCNXJwQ0tNUXM2NWVXandZZWFkYXVsUS9SQjRMQjJiTmU4aTRtTXYwaUJocC9KcDh1RXpNSlQiLCJtYWMiOiJkNjc4MTk4NWM1YjdjNGRlNWFmODc3YjQ0ZDYwYWVkMGIwODJkYjNiMzYxNGE0NDU3Y2Q1ZjFiMjI4MDk5NjAwIiwidGFnIjoiIn0%3D; expires=Wed, 04 Sep 2024 13:12:02 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "view('welcome')",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Users",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"user_id\":5,\"room_id\":6}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IitLbXo4anUrMjVtT3pCbGVsOWxNVGc9PSIsInZhbHVlIjoib0hOTkVkTjQrL1pIVmtIZ0FBcUl6YkRiS2NINkhON0RkTDZuQUQvbFViVFIxMUZtdi9WTEJETkpzeS9VZTlZYi94bUdQanY4b092eGsyUVJQajlNMWdYNlFXUXlvQ0pGNFBnVHJaZEZUWEtFdFRvVnpCYVl1SVNpWThyc3VycmIiLCJtYWMiOiI0MjhlNDg2MWIxNTQ0YTQ0YjM2ZWFhNWYxNWUyNWEzZmRkY2U5NWRjNzVhMjIzZGQ0MTVlNWFiZWI2MWUwZjJlIiwidGFnIjoiIn0%3D; expires=Wed, 04 Sep 2024 13:12:12 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6IktkeHdNSHc0TUNkSm54c0orWEVBanc9PSIsInZhbHVlIjoiUmJpNEp4OXh4aXFFN3NTenFDc2w1MUUvdHEyZHJ4UDFReEY5Y3I0bzdVYjg2Zjd5RDBhS1d2bGJlU2pZYXFOQ1MrN2pqeEcwdjVob3MwV0xuMmJTZncxNmxsbDV6YU9YeTYyaktIMVU3NUxBRys1ejAzSUpKYjZVcEE1a3ExTTUiLCJtYWMiOiJiZDdjMzVkNTk2YjFjMDRmMjIxYTc2MmEzODgxMThiZjU0MWIwNTZmODc4OTI2MjJlNGMyNDhiZDBjYWFlOWRjIiwidGFnIjoiIn0%3D; expires=Wed, 04 Sep 2024 13:12:12 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/users"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"first_name\":\"v\",\"last_name\":\"lwkhvbaijtgnxegfjd\",\"email\":\"jgreen@example.net\",\"password\":\"{+\\\/#x3jFW\\\"YQ#Arvdz.\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET users\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "users\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "14",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6InZUcTBLTEZ0THloMGNUbEp0c1hIalE9PSIsInZhbHVlIjoiRXU2dGVxNmN4ZEt6cUhZOHlGVElqKzRxcW13aEFwN2lOaTNhcEcremVGbzlpbytUSmdrQnc1OXBGSnJkdTBna1FCWDNNcUU2eWVSYXpIaWtUOHc3T3dITm5RNkNaTzdLUVBmczI3VXZ2SlBMeXFoVW5xUGJYYmRDMm03T25Jc3kiLCJtYWMiOiIzOTI1NTE2N2E5NmYzMzQyMzVmMjk3NGRmNThjMjVkNjdmNzliODZmZDZiZDk2ZGFjZmZmY2I2NzYyYjk5NmRhIiwidGFnIjoiIn0%3D; expires=Wed, 04 Sep 2024 13:12:13 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6IllqcDUwZ2QwUFhDWWpvMkdCR2lXV2c9PSIsInZhbHVlIjoiMWpYUjVtQ2I1V2FnT0xXWGt1ZHJXMUFaVHdHY0I3OXVpNTBaeDBKWGp6c3ZQT2RBVGZNbWxaUmxEVmhEUCtYeG5EdmlFNU1MZFZ6NjZZdy9JU2FtZ251TVM0UGlEWERudVFTQU9tZng3ZWczWGp4MkJKc2JCM0ZSbjNSVWtMMVgiLCJtYWMiOiJkMzZhNTI3ZDc3YWI0NmQ5OGZiYzQ2ODk5NDZhMzdkMDBiYzNlYjE3ZDQxYWNkOGRjYTU1ZDg5ZDQzZDdkYTEyIiwidGFnIjoiIn0%3D; expires=Wed, 04 Sep 2024 13:12:13 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\User] 14\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PATCH user\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "user\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/user\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"first_name\":\"uvzjretrhs\",\"last_name\":\"qqoo\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
     "auth": {
         "type": "noauth"
     }

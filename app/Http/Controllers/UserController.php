@@ -5,20 +5,15 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
     /**
-     * @group Users
+     * @group Users Management
      * 
      */
 class UserController extends Controller
 {
-    /**
-     * Get a list of users.
-     * 
-     * @response 200 {
-     *      "id": 1,
-     *      "name: "John Doe",
-     *      "email": "john@example.com"
-     * }
-     */
+    // /**
+    //  * @bodyParam user_id int required The id of the user
+    //  * @bodyParam room_id int required The id of the user
+    //  */
     public function index()
     {
         $users = User::all();
@@ -33,12 +28,13 @@ class UserController extends Controller
             "email" => "required|email|unique:users",
             "password" => "required|string|min:8",
         ]);
+        echo $validated["first_name"] ." ". $validated["last_name"] ."";
         $validated['password'] = bcrypt($validated['password']);
         $user = User::create($validated);
 
         return response()->json($user, 201);
     }
-
+    
     public function show($id)
     {
         $user = User::findOrFail($id);
